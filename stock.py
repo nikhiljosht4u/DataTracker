@@ -5,7 +5,7 @@ import webbrowser
 # CREATING DATBASE IF NOT EXISTS
 try:
 
-    con=mysql.connector.connect(host='localhost',user='root',passwd='5800')
+    con=mysql.connector.connect(host='localhost',user='root',passwd='your_pass')
 
     curs=con.cursor()
 
@@ -21,7 +21,7 @@ except:
 # CREATING TABLES IF NOT EXISTS 
 
 try:
-    con=mysql.connector.connect(host='localhost',user='root',passwd='5800',database='project')
+    con=mysql.connector.connect(host='localhost',user='root',passwd='your_pass',database='your_db_name')
     curs=con.cursor()
     curs.execute("CREATE TABLE IF NOT EXISTS stock_summary (item_name varchar(20),nos int,hsn_code int)")
         
